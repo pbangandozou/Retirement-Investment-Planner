@@ -583,6 +583,6 @@ with tab4:
 # ============================================================
 
 st.markdown(
-    """<div class="app-footer"><span>JOEL · FINANCE & ANALYTICS</span><span>RETIREMENT PLANNING MODEL · FOR EDUCATIONAL USE</span></div>""",
+    """<div class="app-footer"><span>Prustide Bangandozou · FINANCE & ANALYTICS</span><span>RETIREMENT PLANNING MODEL · FOR EDUCATIONAL USE</span></div>""",
     unsafe_allow_html=True,
 )
