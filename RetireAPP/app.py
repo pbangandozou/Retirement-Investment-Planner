@@ -71,8 +71,8 @@ section[data-testid='stSidebar'] { background:#edf2ee; border-right:1px solid #d
 </style>
 
 <div class="brand-bar">
-  <div class="brand-name">JOEL<span>.</span></div>
-  <div class="brand-meta">Finance · Analytics · FP&A</div>
+  <div class="brand-name">Prustide Bangandozou<span>.</span></div>
+  <div class="brand-meta">Finance · Analytics · Technology</div>
 </div>
 
 <div class="eyebrow">PERSONAL FINANCIAL MODEL · RETIREMENT PLANNING</div>
