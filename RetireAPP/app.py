@@ -22,7 +22,7 @@ st.markdown("""
 
 .stApp { background:#f7f8f6; color:#17221d; }
 .block-container { max-width:1180px; padding-top:2.4rem; padding-bottom:4rem; }
-#MainMenu, footer, header { visibility:hidden; }
+#MainMenu, footer, { visibility:hidden; }
 
 .brand-bar { display:flex; justify-content:space-between; align-items:center; padding-bottom:18px; margin-bottom:36px; border-bottom:1px solid #dfe5e1; }
 .brand-name { font-size:15px; font-weight:700; letter-spacing:1px; color:#17221d; }
