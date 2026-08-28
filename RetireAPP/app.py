@@ -10,11 +10,27 @@ import streamlit as st
 # ==========================================
 # PAGE CONFIGURATION
 # ==========================================
-st.set_page_config(
-    page_title="Retirement & Investment Planner",
-    page_icon="📈",
-    layout="wide",
-)
+st.set_page_config(page_title="Prustide Bangandozou | Real Estate Analytics", page_icon="📈", layout="wide")
+
+if "show_welcome" not in st.session_state:
+    st.session_state.show_welcome = True
+
+if st.session_state.show_welcome:
+    @st.dialog("Welcome to Retirement")
+    def welcome_dialog():
+        st.markdown("""
+**What it is:** DealFlow is an interactive Streamlit app for underwriting wholesale real estate deals — it calculates the Maximum Allowable Offer (MAO), scores deal quality on a 0–100 scale, supports ARV with comparable sales, budgets rehab costs line by line, compares assignment vs. double-close exit economics, drafts offer letters, and tracks a deal pipeline, all in one place.
+
+**How to use it:** Run `streamlit run app.py`, then enter the property and deal assumptions in the sidebar (ARV, asking/contract price, acquisition %, repair and closing costs). Every tab — Dashboard, Underwriting, Comparable Sales, Offer Strategy, Rehab Calculator, Exit Strategy, Offer Generator, Deal Pipeline, and Reports & Export — updates live from those inputs, and you can export the full analysis as an Excel workbook or PDF.
+
+**Why it matters:** Wholesalers normally juggle a spreadsheet for MAO math, a separate doc for offer letters, and another for pipeline tracking — this consolidates the entire underwrite-to-offer-to-close workflow into a single interactive tool with instant deal scoring and risk flags, showing the kind of end-to-end financial tooling that speeds up real-world deal analysis.
+        """)
+
+        if st.button("Continue to DealFlow", use_container_width=True):
+            st.session_state.show_welcome = False
+            st.rerun()
+
+    welcome_dialog()
 
 st.markdown("""
 <style>
