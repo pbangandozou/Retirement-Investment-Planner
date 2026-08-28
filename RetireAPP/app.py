@@ -7,7 +7,7 @@ from openpyxl.utils import get_column_letter
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="Retirement| Real Estate Analytics", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Retirement| Real Estate Analytics", page_icon="", layout="wide")
 
 # ==========================================
 # PAGE CONFIGURATION
