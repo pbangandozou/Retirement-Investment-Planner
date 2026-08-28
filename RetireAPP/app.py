@@ -21,11 +21,11 @@ if st.session_state.show_welcome:
     @st.dialog("Welcome to Retirement")
     def welcome_dialog():
         st.markdown("""
-**What it is:** DealFlow is an interactive Streamlit app for underwriting wholesale real estate deals — it calculates the Maximum Allowable Offer (MAO), scores deal quality on a 0–100 scale, supports ARV with comparable sales, budgets rehab costs line by line, compares assignment vs. double-close exit economics, drafts offer letters, and tracks a deal pipeline, all in one place.
+**What it is:** Retirement & Personal Investment Planner is an interactive Streamlit app that projects portfolio growth from today through retirement, checks it against a required nest egg under the 4% withdrawal rule, and stress-tests the plan with scenario analysis and a 5,000-path Monte Carlo simulation — plus a linked, multi-tab Excel model of the same math.
 
-**How to use it:** Run `streamlit run app.py`, then enter the property and deal assumptions in the sidebar (ARV, asking/contract price, acquisition %, repair and closing costs). Every tab — Dashboard, Underwriting, Comparable Sales, Offer Strategy, Rehab Calculator, Exit Strategy, Offer Generator, Deal Pipeline, and Reports & Export — updates live from those inputs, and you can export the full analysis as an Excel workbook or PDF.
+**How to use it:** Use the app to set personal (age, retirement age), savings (portfolio, income, contributions, employer match), market (expected return, volatility, inflation), and spending (goal, Social Security) assumptions in the sidebar. Explore results across four tabs. Growth Projection, Scenario Analysis, Monte Carlo, and Full Schedule. (One thing worth flagging: the sidebar Excel download button is currently commented out in the code even though the workbook is built each run — I noted where to uncomment it if you want that export live.)
 
-**Why it matters:** Wholesalers normally juggle a spreadsheet for MAO math, a separate doc for offer letters, and another for pipeline tracking — this consolidates the entire underwrite-to-offer-to-close workflow into a single interactive tool with instant deal scoring and risk flags, showing the kind of end-to-end financial tooling that speeds up real-world deal analysis.
+**Why it matters:** Retirement planning usually means juggling a static spreadsheet that doesn't stress-test for market volatility. This tool turns that into an interactive model — instant readiness feedback, scenario comparisons, and Monte Carlo probability-of-success estimates showing how far a simple accumulation formula can go when wrapped in the right tooling.
         """)
 
         if st.button("Continue to DealFlow", use_container_width=True):
