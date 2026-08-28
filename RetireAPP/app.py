@@ -7,27 +7,12 @@ from openpyxl.utils import get_column_letter
 import pandas as pd
 import streamlit as st
 
-try:
-    from reportlab.lib import colors
-    from reportlab.lib.pagesizes import letter
-    from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-    from reportlab.lib.units import inch
-    from reportlab.platypus import (
-        SimpleDocTemplate,
-        Paragraph,
-        Spacer,
-        Table,
-        TableStyle,
-        PageBreak,
-    )
-    REPORTLAB_AVAILABLE = True
-except ImportError:
-    REPORTLAB_AVAILABLE = False
+st.set_page_config(page_title="Prustide Bangandozou | Real Estate Analytics", page_icon="📈", layout="wide")
 
 # ==========================================
 # PAGE CONFIGURATION
 # ==========================================
-st.set_page_config(page_title="Prustide Bangandozou | Real Estate Analytics", page_icon="📈", layout="wide")
+
 
 if "show_welcome" not in st.session_state:
     st.session_state.show_welcome = True
